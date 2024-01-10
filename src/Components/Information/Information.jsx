@@ -24,7 +24,7 @@ class Information extends Component {
                                 <div className="line"></div>
                                 <div className="timezone">
                                     <p>Timezone</p>
-                                    <h4>{timezone}</h4>
+                                    <h4>UTC {timezone}</h4>
                                 </div>
                                 <div className="line"></div>
                                 <div className="isp">

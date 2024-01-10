@@ -105,6 +105,10 @@ header {
 .loader {
   display: flex;
   justify-content: center;
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

@@ -21,7 +21,7 @@ class App extends Component {
     this.setState({ loader: true })
 
     try {
-      const getData = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_R9AaqHcBu9Uxcpws8afy4oCB85ZhZ&${isNaN(this.state.searchValue) ? 'domain' : 'ipAddress'}=${this.state.searchValue}`);
+      const getData = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_zlBPDQZ8m6RBfBA1zxlYtOKjzdSYu&${isNaN(this.state.searchValue) ? 'domain' : 'ipAddress'}=${this.state.searchValue}`);
       const data = await getData.json();
 
       if(!this.state.searchValue.trim()) {
@@ -30,7 +30,8 @@ class App extends Component {
         this.setState({ showRes: false, err: 'Ip yoki Domain xato kiritildi', result: null, loader: false })
       } else {
         this.setState({ showRes: true, result: data, err: '', loader:false })
-      } 
+      }
+      console.log(data)
     } catch(err) {
       console.log(err);
       this.setState({ showRes: false, err: 'An error occurred during the fetch.' });
