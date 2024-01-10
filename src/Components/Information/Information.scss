@@ -1,0 +1,114 @@
+.main_section {
+    // padding-bottom: 453px;
+    position: relative;
+    z-index: 9999;
+    .full_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        background: #FFF;
+        box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.10);
+        padding: 37px 32px;
+
+        transform: translateY(-60px);
+        
+        
+        p {
+            color: #2C2C2C;
+            font-family: Rubik;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.75px;
+            text-transform: uppercase;
+            opacity: 0.4987;
+            padding-bottom: 13px;
+        }
+        
+        h4 {
+            color: #2C2C2C;
+            font-family: Rubik;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+            letter-spacing: -0.232px;
+        }
+        
+        .line {
+            width: 1px;
+            height: 75px;
+            background-color: #000;
+            opacity: 0.15;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 906px) {
+    .main_section {
+        .full_info {
+            p {
+                font-size: 10px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 722px) {
+    .main_section {
+        .full_info {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            align-content: center;
+            justify-content: center;
+    
+            p {
+                padding-bottom: 7px;
+            }
+            
+            .line {
+                display: none;
+            }
+    
+            .ip_adress {
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .main_section {
+        .full_info {
+            grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+            p {
+                font-size: 10px;
+                text-align: center;
+            }
+            h4 {
+                text-align: center;
+                font-size: 20px;
+            }
+    
+            .ip_adress {
+                padding-bottom: 24px;
+            }
+    
+            .location {
+                padding-bottom: 24px;
+            }
+    
+            .timezone {
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+
+
